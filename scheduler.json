@@ -1,0 +1,22 @@
+{
+  "rules": [
+    {
+      "description": "DESCRIPTION OF YOUR PROCESS",
+      "database": {
+        "client": "DRIVER OF YOUR DATABASE (mssql, mysql, pgsql, etc)",
+        "connection": {
+          "host": "HOST OF YOUR DATABASE (127.0.0.1)",
+          "user": "root",
+          "password": "123",
+          "database": "databasename"
+        }
+      },
+      "action": "SELECT * FROM sys.columns",
+      "every": {
+        "minute": 0,
+        "seconds": 0,
+        "hour": 0
+      }
+    }
+  ]
+}
